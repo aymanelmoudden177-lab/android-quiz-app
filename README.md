@@ -22,13 +22,29 @@ This project is an Android quiz app that lets users answer multiple-choice quest
 ## Getting Started
 
 1. Clone or download this repository.
-2. Extract `android-quiz-app.zip`.
-3. Open the project in Android Studio.
-4. Build and run on an emulator or physical Android device.
+2. Open the project in Android Studio.
+3. Build and run on an emulator or physical Android device.
 
 ## Project Files
 
-The project source files are included in `android-quiz-app.zip`. Extract the archive to access the full Android Studio project.
+The project source files are organized in the standard Android Studio structure.
+
+## Screenshots
+
+### Start Screen
+![Start Screen](screenshots/start-screen.png)
+
+### Quiz Screen
+![Quiz Screen](screenshots/quiz-screen.png)
+
+### Learning Mode Feedback
+![Learning Mode Feedback](screenshots/learning-feedback.png)
+
+### Result Screen
+![Result Screen](screenshots/result-screen.png)
+
+### Leaderboard
+![Leaderboard](screenshots/leaderboard-screen.png)
 
 ## Author
 
