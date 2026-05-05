@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colours -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#003c8f</color>
+    <color name="accent">#FFC107</color>
+
+    <!-- Text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- UI background -->
+    <color name="background">#F5F5F5</color>
+
+    <!-- Medal colours -->
+    <color name="gold">#DAA520</color>
+    <color name="silver">#9E9E9E</color>
+    <color name="bronze">#CD7F32</color>
+
+    <!-- Learning-mode feedback -->
+    <color name="feedback_correct">#2E7D32</color>
+    <color name="feedback_incorrect">#C62828</color>
+
+    <!-- Leaderboard row highlights -->
+    <color name="rank_gold">#FFF9C4</color>
+    <color name="rank_silver">#EEEEEE</color>
+    <color name="rank_bronze">#FFE0B2</color>
+</resources>
