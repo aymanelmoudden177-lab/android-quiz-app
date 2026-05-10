@@ -7,10 +7,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.QuizApp">
+        android:theme="@style/Theme.AymanFitness">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".QuizActivity" android:exported="false" />
-        <activity android:name=".ReviewActivity" android:exported="false" />
-        <activity android:name=".ScoreActivity" android:exported="false" />
+        <activity android:name=".ui.WorkoutListActivity" android:exported="false" />
+        <activity android:name=".ui.WorkoutDetailActivity" android:exported="false" />
+        <activity android:name=".ui.NutritionActivity" android:exported="false" />
+        <activity android:name=".ui.ProfileActivity" android:exported="false" />
 
     </application>
 

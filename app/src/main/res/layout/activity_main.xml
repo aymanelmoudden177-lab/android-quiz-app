@@ -1,124 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:orientation="vertical">
 
-        <!-- ── App Header ── -->
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="32dp"
-            android:paddingBottom="4dp"
-            android:text="Quiz App"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:textColor="@color/primary"
-            android:textAlignment="center" />
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/header_bg">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="36dp"
-            android:text="Test Your Knowledge"
-            android:textSize="16sp"
-            android:textColor="@color/text_secondary"
-            android:textAlignment="center" />
-
-        <!-- ── Category Label ── -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="12dp"
-            android:text="Select a Quiz Category:"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary" />
-
-        <!-- ── Software Engineering Button ── -->
-        <Button
-            android:id="@+id/btnSoftwareEngineering"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginBottom="14dp"
-            android:text="Software Engineering Quiz"
-            android:textSize="16sp"
-            android:backgroundTint="@color/primary" />
-
-        <!-- ── Data Structures Button ── -->
-        <Button
-            android:id="@+id/btnDataStructures"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginBottom="28dp"
-            android:text="Data Structures Quiz"
-            android:textSize="16sp"
-            android:backgroundTint="@color/primary_dark" />
-
-        <!-- ── Mode Selection Card ── -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Hey Ayman" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text="Quiz Mode:"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/text_primary" />
+            <TextView
+                android:id="@+id/tv_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#E0E0E0"
+                android:textSize="13sp"
+                android:text="72.7 kg · 182 cm · 8.0% BF · BMI 21.9" />
 
-                <RadioGroup
-                    android:id="@+id/radioGroupMode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/accent_light"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:text="@string/tagline" />
+        </LinearLayout>
 
-                    <RadioButton
-                        android:id="@+id/radioNormalMode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="Normal Mode  (generic feedback at end)"
-                        android:textSize="14sp" />
-
-                    <RadioButton
-                        android:id="@+id/radioLearningMode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Learning Mode  (instant feedback per question)"
-                        android:textSize="14sp" />
-
-                </RadioGroup>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- ── View Scores Button ── -->
-        <Button
-            android:id="@+id/btnViewScores"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        <LinearLayout
+            android:id="@+id/card_today"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginBottom="24dp"
-            android:text="View Top Scores"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="18dp"
+            android:background="@drawable/card_bg"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todays_workout"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tv_today_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Mon — Upper Power" />
+
+            <TextView
+                android:id="@+id/tv_today_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:text="Chest, Back, Shoulders" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/accent"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="Tap to view exercises →" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="18dp"
+            android:background="@drawable/card_bg"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todays_nutrition"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tv_kcal_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/kcal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="3000 kcal" />
+
+            <TextView
+                android:id="@+id/tv_macros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:text="P 160g · C 430g · F 65g" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btn_workout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/btn_workout"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+
+            <Button
+                android:id="@+id/btn_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_nutrition"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

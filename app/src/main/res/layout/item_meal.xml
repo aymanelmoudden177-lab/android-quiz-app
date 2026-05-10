@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="14dp"
+    android:background="@drawable/card_bg"
+    android:elevation="1dp">
+
+    <TextView
+        android:id="@+id/tv_meal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Breakfast" />
+
+    <TextView
+        android:id="@+id/tv_meal_foods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:text="4 eggs, oats, banana" />
+
+    <TextView
+        android:id="@+id/tv_meal_macros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/kcal"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="780 kcal · P 40g · C 95g · F 28g" />
+</LinearLayout>

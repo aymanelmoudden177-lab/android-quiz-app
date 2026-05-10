@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/header_bg">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayman"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent_light"
+                android:textSize="14sp"
+                android:text="Goal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:background="@drawable/card_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEASUREMENTS"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Age" />
+                <TextView android:id="@+id/tv_age" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Height" />
+                <TextView android:id="@+id/tv_height" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Weight" />
+                <TextView android:id="@+id/tv_weight" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="BMI" />
+                <TextView android:id="@+id/tv_bmi" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Body Fat" />
+                <TextView android:id="@+id/tv_bf" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Lean Mass" />
+                <TextView android:id="@+id/tv_lbm" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Fat Mass" />
+                <TextView android:id="@+id/tv_fm" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="8dp"
+                android:text="ENERGY"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textAllCaps="true" />
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="BMR" />
+                <TextView android:id="@+id/tv_bmr" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="TDEE" />
+                <TextView android:id="@+id/tv_tdee" style="@style/RowKvValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowKv">
+                <TextView style="@style/RowKvLabel" android:text="Daily target" />
+                <TextView android:id="@+id/tv_target" style="@style/RowKvValue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="20dp"
+            android:padding="16dp"
+            android:background="@drawable/card_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COACH'S NOTE"
+                android:textColor="@color/accent"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
