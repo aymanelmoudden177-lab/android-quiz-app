@@ -1,4 +1,4 @@
-const CACHE = "ayman-fitness-v1";
+const CACHE = "ayman-fitness-v2";
 const ASSETS = [
   "./",
   "./index.html",
