@@ -1,55 +1,49 @@
-# Android Quiz App
+# Ayman Fitness
 
-A simple and interactive quiz application built for Android.
+A personal Android app — a 4-day workout split and a daily nutrition plan tailored
+to Ayman's stats (23 y/o male, 1.82 m, 72.7 kg, 8% body fat).
 
-## About
+## What it does
 
-This project is an Android quiz app that lets users answer multiple-choice questions, track their score, and review their results.
+- **Dashboard** — today's workout + daily kcal/macros at a glance.
+- **My Workout** — full week view with a 4-day Upper/Lower (Power + Hypertrophy)
+  split, plus rest-day guidance. Tap any day to see exercises with sets/reps and
+  coaching cues.
+- **My Nutrition** — daily target (~3000 kcal lean-bulk surplus), 5-meal plan
+  with foods + macros per meal, and supplement guidance.
+- **My Profile** — body measurements, BMR, TDEE, kcal target, and progression
+  notes.
 
-## Features
+## The plan
 
-- Multiple-choice quiz questions
-- Score tracking
-- Clean and user-friendly interface
-- Results screen at the end of the quiz
+**4-day split** (Mon/Tue/Thu/Fri, with active-recovery Wed and full rest Sat/Sun):
 
-## Tech Stack
+| Day | Session            | Focus                                |
+|-----|--------------------|--------------------------------------|
+| Mon | Upper Power        | Heavy compounds (bench, row, OHP)    |
+| Tue | Lower Power        | Squat, RDL, calves, core             |
+| Thu | Upper Hypertrophy  | Volume work, arms, lateral delts     |
+| Fri | Lower Hypertrophy  | Quads, glutes, hams, calves, abs     |
 
-- Language: Java / Kotlin
-- Platform: Android
-- IDE: Android Studio
+**Nutrition** — ~3000 kcal/day (Mifflin-St Jeor TDEE 2720 + 300 surplus):
+- Protein: 160 g
+- Carbs:   430 g
+- Fat:      65 g
 
-## Getting Started
+## Tech stack
 
-1. Clone or download this repository.
-2. Open the project in Android Studio.
-3. Build and run on an emulator or physical Android device.
+- Java, AndroidX, Material Components
+- RecyclerView, ConstraintLayout, CardView
+- minSdk 24, targetSdk 34
 
-## Project Files
+## Build & run
 
-The project source files are organized in the standard Android Studio structure.
+1. Open the project in Android Studio.
+2. Build and run on emulator or device — no setup needed; the plan is
+   embedded in `data/PlanRepository.java` and `data/UserProfile.java`.
 
-## Screenshots
+## Customising
 
-### Start Screen
-![Start Screen](screenshots/start-screen.png)
-
-### Quiz Screen
-![Quiz Screen](screenshots/quiz-screen.png)
-
-### Learning Mode Feedback
-![Learning Mode Feedback](screenshots/learning-feedback.png)
-
-### Result Screen
-![Result Screen](screenshots/result-screen.png)
-
-### Leaderboard
-![Leaderboard](screenshots/leaderboard-screen.png)
-
-## Author
-
-aymanelmoudden177-lab
-
-## License
-
-This project is open source and available for educational purposes.
+To tweak the plan for new measurements, update
+`app/src/main/java/com/ayman/fitness/data/UserProfile.java`. Calorie and macro
+targets are derived automatically.

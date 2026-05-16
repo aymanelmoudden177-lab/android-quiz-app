@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Quiz App</string>
+    <string name="app_name">Ayman Fitness</string>
+    <string name="tagline">Lean bulk &#183; 4-day split</string>
+    <string name="btn_workout">My Workout</string>
+    <string name="btn_nutrition">My Nutrition</string>
+    <string name="btn_profile">My Profile</string>
+    <string name="todays_workout">Today’s Workout</string>
+    <string name="todays_nutrition">Daily Targets</string>
+    <string name="rest_day">Rest day &#8212; recover, sleep 8h, hit 3000 kcal &amp; 180g protein.</string>
 </resources>
