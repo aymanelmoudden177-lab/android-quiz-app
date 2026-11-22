@@ -1,33 +1,36 @@
-# Android Quiz App
+# Welcome To My Quiz – Android Quiz App
 
-A simple and interactive quiz application built for Android.
+A native Android quiz app built in Java with Android Studio for the Mobile Web App Development module at the University of West London (2025/26).
 
-## About
-
-This project is an Android quiz app that lets users answer multiple-choice questions, track their score, and review their results.
+**Demo video:** https://www.youtube.com/watch?v=xNAfgyo_PEg
 
 ## Features
 
-- Multiple-choice quiz questions
-- Score tracking
-- Clean and user-friendly interface
-- Results screen at the end of the quiz
+- Two quiz categories: Software Engineering and Data Structures
+- Randomised question order each time you play
+- Two play modes:
+  - **Normal mode:** answer all the questions, then see your score
+  - **Learning mode:** instant feedback after each answer
+- Bronze, Silver and Gold medals based on your score
+- Top-10 leaderboard that is saved on the device between sessions
+- Material Components UI with input validation
 
-## Tech Stack
+## Tech stack
 
-- Language: Java / Kotlin
-- Platform: Android
-- IDE: Android Studio
+- Java, XML layouts
+- Android Studio
+- SharedPreferences and Gson (JSON) for saving the leaderboard
+- Material Components
 
-## Getting Started
+## How it is built
 
-1. Clone or download this repository.
-2. Open the project in Android Studio.
-3. Build and run on an emulator or physical Android device.
+The app is split into 7 classes that separate the question data, the saved leaderboard and the screens. I wrote the leaderboard saving myself with SharedPreferences and Gson instead of using a database, to understand how Android handles activity lifecycles and saved state.
 
-## Project Files
+## Run it
 
-The project source files are organized in the standard Android Studio structure.
+1. Clone the repository
+2. Open the project in Android Studio
+3. Let Gradle sync, then run it on an emulator or a physical Android device
 
 ## Screenshots
 
@@ -48,8 +51,5 @@ The project source files are organized in the standard Android Studio structure.
 
 ## Author
 
-aymanelmoudden177-lab
-
-## License
-
-This project is open source and available for educational purposes.
+Ayman El Moudden Afilal – BSc (Hons) Information Technology, University of West London
+LinkedIn: https://www.linkedin.com/in/ayman-el-moudden-afilal/
