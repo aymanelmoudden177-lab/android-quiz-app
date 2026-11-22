@@ -2,8 +2,6 @@
 
 A native Android quiz app built in Java with Android Studio for the Mobile Web App Development module at the University of West London (2025/26).
 
-**Demo video:** https://www.youtube.com/watch?v=xNAfgyo_PEg
-
 ## Features
 
 - Two quiz categories: Software Engineering and Data Structures
